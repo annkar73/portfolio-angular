@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    background-color: #f9be76;
+    color: #220300;
+    box-sizing: border-box;
+}
