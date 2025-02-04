@@ -3,4 +3,6 @@
     background-color: #f2d9ce;
     color: #220300;
     box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
 }
