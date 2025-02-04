@@ -1,7 +1,7 @@
 section {
-    margin: 50px;
-    width: 75vw;
-    box-sizing: border-box;
-    justify-content: center;
+    margin: 100px auto;
     align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    display: flex;
 }

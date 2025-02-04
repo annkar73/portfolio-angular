@@ -7,11 +7,13 @@
 
 /* 📱 Mobil layout - En kolumn för alla element */
 section {
-    margin: 50px auto;
+    margin: 100px auto;
     width: var(--form-width-mobile);
     max-width: 500px;
     align-items: center;
     justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Wrapper för formuläret */
