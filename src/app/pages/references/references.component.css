@@ -5,3 +5,16 @@ section {
     box-sizing: border-box;
     display: flex;
 }
+
+.page-wrapper {
+    background-color: var(--bg-light);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    width: 90%;
+    box-sizing: border-box;
+
+}
+
+.refItem {
+    list-style-type: none;
+}
