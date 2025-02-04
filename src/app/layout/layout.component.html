@@ -1,15 +1,17 @@
-
 <header>
-  <nav>
-    <a routerLink="/home" routerLinkActive="active">Hem</a>
-    <a routerLink="/projects" routerLinkActive="active">Projekt</a>
-    <a routerLink="/education" routerLinkActive="active">Utbildningen</a>
-    <a routerLink="/references" routerLinkActive="active">Referenser</a>
-    <a routerLink="/contact" routerLinkActive="active">Kontakt</a>
+  <button class="hamburger-menu" (click)="toggleMenu()">
+    {{ isMenuOpen ? '✖' : '☰' }}
+  </button>
+  
+  <nav [ngClass]="{ 'open': isMenuOpen }">
+    <a routerLink="/" routerLinkActive="active" (click)="closeMenu()">Hem</a>
+    <a routerLink="/projects" routerLinkActive="active" (click)="closeMenu()">Projekt</a>
+    <a routerLink="/education" routerLinkActive="active" (click)="closeMenu()">Om utbildningen</a>
+    <a routerLink="references" routerLinkActive="active" (click)="closeMenu()">Referenser</a>
+    <a routerLink="/contact" routerLinkActive="active" (click)="closeMenu()">Kontakt</a>
   </nav>
 </header>
- 
 
 <main>
-  <router-outlet></router-outlet>  <!-- Här renderas komponenterna för ruttval -->
+  <router-outlet></router-outlet>
 </main>
