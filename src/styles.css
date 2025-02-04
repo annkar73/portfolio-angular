@@ -2,14 +2,11 @@
 :root {
     --primary-color: #ffd700;
     --primary-hover: #e6c200;
-    --text-color: #220300;
-    --header-color: #220300;
+    --text-color: #212121;
+    --header-color: #212121;
     --bg-dark: #d5d5d5;
     --bg-light: #f9f9f9;
     --border-color: #ccc;
-    --form-width-mobile: 90%;
-    --form-width-tablet: 70%;
-    --form-width-desktop: 50%;
     --input-padding: 10px;
     --border-radius: 4px;
 }
