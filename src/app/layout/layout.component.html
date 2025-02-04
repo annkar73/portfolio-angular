@@ -1,20 +1,15 @@
 
-    <header>
-        <nav>
-          <a routerLink="/home" routerLinkActive="active">Home</a>
-          <a routerLink="/projects" routerLinkActive="active">Projects</a>
-          <a routerLink="/education" routerLinkActive="active">Education</a>
-          <a routerLink="/references" routerLinkActive="active">References</a>
-          <a routerLink="/contact" routerLinkActive="active">Contact</a>
-        </nav>
-      </header>
-      
-      <main>
-        <!-- Här kommer de olika komponenterna visas beroende på routing -->
-        <router-outlet></router-outlet>
-      </main>
-      
+<header>
+  <nav>
+    <a routerLink="/home" routerLinkActive="active">Hem</a>
+    <a routerLink="/projects" routerLinkActive="active">Projekt</a>
+    <a routerLink="/education" routerLinkActive="active">Utbildningen</a>
+    <a routerLink="/references" routerLinkActive="active">Referenser</a>
+    <a routerLink="/contact" routerLinkActive="active">Kontakt</a>
+  </nav>
+</header>
+ 
 
-      <footer>
-        &copy; 2025 Anna Karlsen
-      </footer>
+<main>
+  <router-outlet></router-outlet>  <!-- Här renderas komponenterna för ruttval -->
+</main>

@@ -1,0 +1,38 @@
+/* Grundläggande stil för header och navigation */
+header {
+    background-color: #220300;
+    padding: 10px 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: #220300;
+  }
+  
+  nav a {
+    color: #ffd700;
+    background-color: transparent;
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  nav a.active {
+    font-weight: bold;
+  }
+  
+  /* Om du vill göra headern fixerat (sticky) */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }

@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule } from '@angular/router';  // Se till att RouterModule importeras
 
 @Component({
   selector: 'app-layout',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [RouterModule],  // RouterModule behövs för att routing ska fungera
   templateUrl: './layout.component.html',
   styleUrls: ['./layout.component.css']
 })
-export class LayoutComponent { 
-    title='Anna Karlsen Portfolio';
+export class LayoutComponent {
+  title = 'Anna Karlsen Portfolio';
 }

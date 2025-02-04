@@ -1,8 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --primary-color: #ffd700;
+    --primary-hover: #e6c200;
+    --text-color: #220300;
+    --bg-dark: #d5d5d5;
+    --bg-light: #f9f9f9;
+    --border-color: #ccc;
+    --form-width-mobile: 90%;
+    --form-width-tablet: 70%;
+    --form-width-desktop: 50%;
+    --input-padding: 10px;
+    --border-radius: 4px;
+}
 * {
-    background-color: #f2d9ce;
-    color: #220300;
     box-sizing: border-box;
     align-items: center;
     justify-content: center;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-color);
+
 }

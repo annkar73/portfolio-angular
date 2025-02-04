@@ -1,6 +1,10 @@
 import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
-import { AppComponent } from './app/app.component';
+import { provideRouter } from '@angular/router';
+import { LayoutComponent } from './app/layout/layout.component';
+import { appRoutes } from './app/app.routes';  // Importera appRoutes här
 
-bootstrapApplication(AppComponent, appConfig)
-  .catch((err) => console.error(err));
+bootstrapApplication(LayoutComponent, {
+  providers: [
+    provideRouter(appRoutes)  // Ge routing till applikationen
+  ]
+}).catch(err => console.error(err));

@@ -1,0 +1,153 @@
+/* Formulär-specifika variabler */
+:root {
+    --input-padding: 12px;
+    --button-padding: 12px;
+    --gap: 25px; /* Gap mellan fält */
+}
+
+/* 📱 Mobil layout - En kolumn för alla element */
+section {
+    margin: 50px auto;
+    width: var(--form-width-mobile);
+    max-width: 500px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Wrapper för formuläret */
+.contact-wrapper {
+    background-color: var(--bg-light);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    width: 100%;
+    box-sizing: border-box;  /* Se till att paddingen inte påverkar bredden */
+}
+
+/* Formulärlayout - Kontaktformulär */
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr;  /* En kolumn på mobil */
+    gap: var(--gap);  /* Gap mellan fält */
+}
+
+/* Justering av etiketter och input */
+.form-group {
+    display: flex;
+    flex-direction: column; /* Mobil - label över input */
+    gap: var(--gap);
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+label {
+    font-weight: bold;
+    background-color: transparent;
+    width: 100%;
+}
+
+/* Input och textarea */
+input,
+textarea {
+    background-color: var(--bg-light);
+    width: 100%;
+    padding: var(--input-padding);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Textarea */
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Knappar */
+.button-group {
+    display: flex;
+    flex-direction: column;  /* Knappar på en kolumn */
+    gap: var(--gap);  /* Gap mellan knappar */
+    width: 100%;
+    margin-top: 20px; /* Marginal för att få avstånd från textarea */
+}
+
+button {
+    padding: var(--button-padding);
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 16px;
+    min-height: 40px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;  /* Fyller hela bredden av knapprutan */
+    margin: 10px 5px;
+}
+
+button:hover {
+    background-color: var(--primary-hover);
+}
+
+/* Tablet & Desktop layout - Förbättra formatering */
+
+/* Tablet */
+@media (min-width: 600px) {
+    /* För .contact-form */
+    .contact-form {
+        grid-template-columns: 1fr;  /* En kolumn fortfarande för fält */
+    }
+
+    /* För .form-group */
+    .form-group {
+        flex-direction: row;  /* Label till vänster och input till höger */
+        align-items: center;
+    }
+
+    label {
+        width: 150px; /* För att ge plats åt label på vänster sida */
+    }
+
+    input,
+    textarea {
+        width: 100%;
+    }
+
+    /* Knappar på samma rad */
+    .button-group {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: var(--gap);
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    /* För .contact-form */
+    .contact-form {
+        grid-template-columns: 1fr;  /* En kolumn fortfarande */
+    }
+
+    /* För .form-group */
+    .form-group {
+        flex-direction: row;  /* Label till vänster och input till höger */
+        align-items: center;
+    }
+
+    label {
+        width: 150px; /* För att ge plats åt label på vänster sida */
+    }
+
+    input,
+    textarea {
+        width: 100%;
+    }
+
+    /* Knappar på samma rad */
+    .button-group {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: var(--gap);
+    }
+}
