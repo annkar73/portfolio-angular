@@ -4,10 +4,10 @@
   </button>
   
   <nav [ngClass]="{ 'open': isMenuOpen }">
-    <a routerLink="/" routerLinkActive="active" (click)="closeMenu()">Hem</a>
+    <a routerLink="/home" routerLinkActive="active" (click)="closeMenu()">Hem</a>
     <a routerLink="/projects" routerLinkActive="active" (click)="closeMenu()">Projekt</a>
     <a routerLink="/education" routerLinkActive="active" (click)="closeMenu()">Om utbildningen</a>
-    <a routerLink="references" routerLinkActive="active" (click)="closeMenu()">Referenser</a>
+    <a routerLink="/references" routerLinkActive="active" (click)="closeMenu()">Referenser</a>
     <a routerLink="/contact" routerLinkActive="active" (click)="closeMenu()">Kontakt</a>
   </nav>
 </header>
