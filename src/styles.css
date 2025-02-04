@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
     --primary-color: #ffd700;
-    --primary-hover: #e6c200;
+    --primary-hover: #f4780c;
     --text-color: #212121;
     --header-color: #212121;
     --bg-dark: #d5d5d5;
@@ -19,5 +19,5 @@
 body {
     background-color: var(--bg-dark);
     color: var(--text-color);
-
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

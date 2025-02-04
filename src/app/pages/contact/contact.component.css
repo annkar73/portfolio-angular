@@ -90,6 +90,7 @@ button {
 
 button:hover {
     background-color: var(--primary-hover);
+    font-weight: bold;
 }
 
 /* Tablet & Desktop layout - Förbättra formatering */
