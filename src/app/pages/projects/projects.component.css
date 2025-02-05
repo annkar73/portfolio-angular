@@ -1,16 +1,81 @@
-section {
+.projects-container {
     margin: 100px auto;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
     display: flex;
+    flex-direction: column;
 }
 
-.page-wrapper {
+/* 🟢 MOBILE-FIRST (bild överst, sedan titel, beskrivning och knapp) */
+.project-card {
+    border: 1px solid var(--border-color);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
     background-color: var(--bg-light);
-    padding: 20px;
-    border-radius: var(--border-radius);
-    width: 90%;
-    box-sizing: border-box;
+    text-align: center;
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
 
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.project-button {
+    padding: 12px 18px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--bg-light);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.project-button:hover {
+    background-color: var(--primary-hover);
+}
+
+/* 🔵 TABLET & DESKTOP (bild vänster, innehåll höger) */
+@media (min-width: 768px) {
+    .project-card {
+        flex-direction: row;
+        align-items: center;
+        width: 65vw;
+        text-align: left;
+    }
+
+    .project-card img {
+        width: 20%; /* Bilden tar 1/5 av bredden */
+        height: auto;
+        margin: 0;
+    }
+
+    .project-content {
+        flex: 1; /* Resterande utrymme */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding-left: 15px;
+    }
+
+    .project-button {
+        align-self: flex-start; /* Knappen vänsterjusteras */
+    }
 }
