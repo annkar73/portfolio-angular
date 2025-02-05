@@ -24,8 +24,8 @@ export class ProjectsComponent {
   }
   projects: IProject[] = [
     {
-      title: 'Slumpgenerator', 
-      description: 'En slumpgenerator för sifferspe som tex Lotto och Keno. Skrivet i Vue', 
+      title: 'Slumpa spelrader', 
+      description: 'En slumpgenerator för sifferspel som tex Lotto och Keno. Skrivet i Vue', 
       image: 'assets/ak_logo2.jpg', 
       link: 'https://annkar73.github.io/lotto-generator/'
       },
@@ -43,9 +43,15 @@ export class ProjectsComponent {
     },
     {
       title: 'OrdMatch - matcha ord och bild', 
-      description: 'Mitt examensarbete, ett spel av memorytyp där man matchar bilder mot ord. Skapat för att vara ett pedagogiskt och roligt spel för barn som börjar visa intresse för bokstäver och ord. Skrivet i React med styled components och Typescript.', 
+      description: 'Mitt examensarbete, ett spel av memorytyp där man matchar bilder mot ord. Skapat för att vara ett pedagogiskt och roligt spel för barn som börjar visa intresse för bokstäver och ord. Skrivet i React med styled components och TypeScript.', 
       image: 'assets/ak_logo2.jpg', 
       link: 'https://karlsen-wordmatch.netlify.app/'
+    },
+    {
+      title: 'The Nightingale Project',
+      description:'Min första praktikperiod inom The Nightingale Project under Johannes Gutenberg Universität innebar att refaktorera projektets hemsida. Valet föll på React med styled components och TypeScript.',
+      image:'assets/ak_logo2.jpg',
+      link:'https://nightingale.uni-mainz.de/'
     }
 
   ];
