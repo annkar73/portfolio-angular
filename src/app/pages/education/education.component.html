@@ -2,27 +2,18 @@
     <h1>Om utbildningen</h1>
     <div class="page-wrapper">
         <div class="list-wrapper">
-    <h3>Kurser som ingått:</h3>
-    <ul>
-        
-       <li>HTML och CSS</li> 
-<li>JavaScript - grundkurs</li>
-<li>Agilt projektarbete</li>
-<li>API-utveckling</li>
-<li>Arbetsmetodik för utvecklare</li>
-<li>Grafiska verktyg för gränssnittsdesign</li>
-<li>UX Usability</li>
-<li>Testning</li>
-<li>JavaScript - fördjupning</li>
-<li>LIA - Lärande i Arbete</li>
-<li>Examensarbete</li>
-<li>Kompentensportfölj och Entreprenörskap</li>
-
-    </ul>
-</div>
-    <div class="lia-wrapper"><h3>Praktikperioder:</h3></div>
-    <div class="degree-wrapper"><h3>Examensarbete:</h3></div>
-    
-    
+            <h3>Kurser som ingått:</h3>
+            <ul>
+                <li *ngFor="let course of courses">{{ course }}</li>
+            </ul>
+        </div>
+        <div class="lia-wrapper">
+            <h3>Praktikperioder:</h3>
+            <p>{{ liaText }}</p>
+        </div>
+        <div class="degree-wrapper">
+            <h3>Examensarbete:</h3>
+            <p>{{ degreeText }}</p>
+        </div>
     </div>
 </section>
