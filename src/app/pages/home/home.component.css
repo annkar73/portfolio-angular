@@ -1,17 +1,29 @@
 section {
-    margin: 100px auto;
+    background-image: url('/assets/wave.webp');
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 50px 0 0 0;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    height: 100vh;
+    width: 100vw;
 }
 
 .page-wrapper {
-    background-color: var(--bg-light);
+    background-color: transparent;
     padding: 20px;
+    margin: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
     border-radius: var(--border-radius);
     width: 90%;
     box-sizing: border-box;
-
+    display: flex;
+    flex-direction: column;
 }
