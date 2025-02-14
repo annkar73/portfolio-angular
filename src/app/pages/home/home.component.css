@@ -1,12 +1,12 @@
 section {
-    background-image: url('/assets/wave.webp');
+    background-image: url('/assets/yellow_shapes_bg.png');
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -27,12 +27,50 @@ section {
     display: flex;
     flex-direction: column;
 
-    @media (min-width: 768px) {
+    @media screen and (min-width: 768px) {
         width: 65%;
         padding-top: 50px;
     }
 }
 
+.page-wrapper h1 {
+    font-family: 'Protest Revolution', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    color: var(--text-color);
+    margin: 0 auto;
+  
+    @media screen and (min-width: 798px) { 
+      font-size: 4rem;
+    }
+  
+    @media screen and (min-width: 1200px) { 
+      font-size: 5rem;
+    }
+  }
 .home-content {
     padding: 10px 0;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.home-content h2 {
+    margin: 5px 0;
+    padding: 0;
+    font-size: 1.2rem;
+    line-height: 1.5;
+
+}
+.sign {
+    font-family: 'Beth Ellen', sans-serif;
+    font-size: 2rem;
+    text-align: right;
+    margin-right: 20px;
+    display: block;
+    display: flex;
+    align-self: flex-end;
+}
+p {
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+
 }
