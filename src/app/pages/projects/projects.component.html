@@ -3,7 +3,7 @@
     <div *ngFor="let project of projects" class="project-card">
       <img *ngIf="project.image" [src]="project.image" [alt]="project.title">
   <div class="project-content">
-      <h2>{{ project.title }}</h2>
+      <h4>{{ project.title }}</h4>
       <p>{{ project.description }}</p>
       <button class="project-button" (click)="openProject(project.link)">Besök projektet</button>
     </div>
